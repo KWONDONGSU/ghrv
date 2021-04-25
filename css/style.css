@@ -3,6 +3,27 @@
   /* min-width: 1024px; */
   margin: 0 auto;
 }
+/* 퀵메뉴 */
+#quick {
+  position: fixed;
+  top: 25rem;
+  right: 2.37rem;
+  width: 4rem;
+  height: 4rem;
+  z-index: 9999999;
+  animation: floting 1.5s infinite;
+}
+@keyframes floting {
+  0% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
 /* 페이지별 영역 */
 body {
   overflow-x: hidden;
@@ -40,6 +61,7 @@ body {
   position: absolute;
   right: 0;
   top: 1.56rem;
+  cursor: pointer;
 }
 #header .inner {
   position: relative;
@@ -66,12 +88,16 @@ body {
   clear: both;
 }
 #header #nav {
-  position: relative;
-  float: right;
-  right: 1.5rem;
-  bottom: 1.2rem;
-  width: 19rem;
   display: none;
+  position: absolute;
+  float: right;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 58.6rem;
+  z-index: 9999999;
+  background-color: rgb(105, 105, 105);
+  opacity: 70%;
 }
 
 #header #nav .depth1 > li {
@@ -86,7 +112,9 @@ body {
   line-height: 40px;
   font-size: 1.31rem;
   font-weight: 100;
-  color: #000000;
+  color: #ffffff;
+  margin-left: 58rem;
+  margin-top: 3rem;
   font-family: "Noto Sans KR", cursive;
 }
 /*********************header 끝****************************/
@@ -404,6 +432,11 @@ body {
   height: 4.37rem;
   background-color: #a6cb2f;
   border-radius: 1rem;
+  cursor: pointer;
+}
+.sec_4_radius_square_1:hover {
+  background-color: #475714;
+  transition: 1s;
 }
 .sec_4_radius_square_1 p {
   font-size: 1.56rem;
@@ -419,6 +452,11 @@ body {
   margin-left: 1.25rem;
   background-color: #a6cb2f;
   border-radius: 1rem;
+  cursor: pointer;
+}
+.sec_4_radius_square_2:hover {
+  background-color: #475714;
+  transition: 1s;
 }
 .sec_4_radius_square_2 p {
   font-size: 1.56rem;
@@ -434,6 +472,11 @@ body {
   margin-left: 1.25rem;
   background-color: #a6cb2f;
   border-radius: 1rem;
+  cursor: pointer;
+}
+.sec_4_radius_square_3:hover {
+  background-color: #475714;
+  transition: 1s;
 }
 .sec_4_radius_square_3 p {
   font-size: 1.56rem;
@@ -666,14 +709,20 @@ body {
   height: 7.5rem;
   float: left;
   background-color: #84b329;
+  cursor: pointer;
+}
+.inquiry_button:hover {
+  background-color: #33470b;
+  transition: 1s;
 }
 .inquiry_button img {
   width: 7.5rem;
   float: left;
-  margin-left: 44rem;
+  margin-left: 45rem;
   padding-top: 0.2rem;
 }
 .inquiry_text {
+  float: left;
   font-size: 2.81rem;
   color: #ffffff;
   padding-top: 1.7rem;
@@ -828,14 +877,20 @@ body {
   float: left;
   margin-top: 6.56rem;
   background-color: #84b329;
+  cursor: pointer;
+}
+.inquiry_button2:hover {
+  background-color: #33470b;
+  transition: 1s;
 }
 .inquiry_button2 img {
   width: 7.5rem;
   float: left;
-  margin-left: 44rem;
+  margin-left: 45rem;
   padding-top: 0.2rem;
 }
 .inquiry_text2 {
+  float: left;
   font-size: 2.81rem;
   color: #ffffff;
   padding-top: 1.7rem;
@@ -1484,14 +1539,20 @@ body {
   float: left;
   margin-top: 6.56rem;
   background-color: #84b329;
+  cursor: pointer;
+}
+.inquiry_button3:hover {
+  background-color: #33470b;
+  transition: 1s;
 }
 .inquiry_button3 img {
   width: 7.5rem;
   float: left;
-  margin-left: 44rem;
+  margin-left: 45rem;
   padding-top: 0.2rem;
 }
 .inquiry_text3 {
+  float: left;
   font-size: 2.81rem;
   color: #ffffff;
   padding-top: 1.7rem;
@@ -1707,6 +1768,11 @@ body {
   margin-left: 28.5rem;
   margin-top: 7.93rem;
   background-color: #a6cb2f;
+  cursor: pointer;
+}
+.sec_9_button:hover {
+  background-color: #4c5e13;
+  transition: 1s;
 }
 .sec_9_button p {
   float: left;
@@ -1757,6 +1823,11 @@ body {
   margin-left: 8.3rem;
   border-radius: 0.5rem;
 }
+.sp_x1 {
+  float: left;
+  width: 5.93rem;
+  height: 2.25rem;
+}
 .first_improve {
   float: left;
   width: 8.8rem;
@@ -1765,15 +1836,15 @@ body {
   margin-left: 8.3rem;
 }
 .name {
+  float: left;
   font-size: 1.56rem;
 }
 .name_1 {
+  margin-top: 0.4rem;
+  margin-left: 0.3rem;
   float: left;
   width: 2.5rem;
   height: 1.56rem;
-  position: absolute;
-  top: 900rem;
-  left: 31.3rem;
   border-radius: 0.4rem;
   background-color: #84b329;
 }
@@ -1782,6 +1853,11 @@ body {
   color: #ffffff;
   font-family: "Noto Sans KR", sans-serif;
   padding-left: 0.4rem;
+}
+.sp_x2 {
+  float: left;
+  width: 7.93rem;
+  height: 2.25rem;
 }
 .second_improve {
   float: left;
@@ -1792,14 +1868,14 @@ body {
 }
 .email_add {
   font-size: 1.56rem;
+  float: left;
 }
 .name_2 {
+  margin-top: 0.3rem;
+  margin-left: 0.3rem;
   float: left;
   width: 2.5rem;
   height: 1.56rem;
-  position: absolute;
-  top: 911.1rem;
-  left: 32.9rem;
   border-radius: 0.4rem;
   background-color: #84b329;
 }
@@ -1817,6 +1893,11 @@ body {
   margin-top: 0.8rem;
   border-radius: 0.5rem;
 }
+.sp_x3 {
+  float: left;
+  width: 7.93rem;
+  height: 2.25rem;
+}
 .third_improve {
   float: left;
   width: 8.8rem;
@@ -1826,14 +1907,14 @@ body {
 }
 .phone_number {
   font-size: 1.56rem;
+  float: left;
 }
 .name_3 {
+  margin-top: 0.3rem;
+  margin-left: 0.3rem;
   float: left;
   width: 2.5rem;
   height: 1.56rem;
-  position: absolute;
-  top: 922.5rem;
-  left: 32.9rem;
   border-radius: 0.4rem;
   background-color: #84b329;
 }
@@ -1858,8 +1939,14 @@ body {
   margin-top: 4.2rem;
   margin-left: 8.3rem;
 }
+.sp_x4 {
+  float: left;
+  width: 7.93rem;
+  height: 2.25rem;
+}
 .locate {
   font-size: 1.56rem;
+  float: left;
 }
 .name_4 {
   float: left;
@@ -1892,16 +1979,21 @@ body {
   margin-top: 4.2rem;
   margin-left: 8.3rem;
 }
+.sp_x5 {
+  float: left;
+  width: 12.8rem;
+  height: 2.25rem;
+}
 .wants {
   font-size: 1.56rem;
+  float: left;
 }
 .name_5 {
+  margin-top: 0.3rem;
+  margin-left: 0.3rem;
   float: left;
   width: 2.5rem;
   height: 1.56rem;
-  position: absolute;
-  top: 945.2rem;
-  left: 37.5rem;
   border-radius: 0.4rem;
   background-color: #84b329;
 }
@@ -1960,6 +2052,10 @@ body {
   margin-left: 19rem;
   cursor: pointer;
 }
+.sec10_ask_button_2:hover {
+  background-color: #404e11;
+  transition: 1s;
+}
 .sec10_ask_button_2 li {
   font-size: 1.25rem;
   color: #ffffff;
@@ -1972,73 +2068,238 @@ body {
 /*********************footer****************************/
 .last {
   width: 100%;
-  height: 20.1rem;
-  background-color: #a3a3a3;
+  height: 14.1rem;
+  background-color: #6a6a6a;
   z-index: 9999;
   position: absolute;
-  top: 1011.1rem;
+  top: 999.7rem;
 }
 .footer_mn {
-  width: 100%;
-
+  float: left;
   margin-top: 20px;
+}
+.ft_textbox {
+  float: left;
+  margin-left: 18rem;
+  margin-top: 3rem;
+  width: 64.1rem;
+  height: 1.81rem;
 }
 .ft_textbox p {
   font-family: "Noto Sans KR", sans-serif;
 }
-.ft_text1 {
-  width: 45%;
-  font-size: 0.9rem;
-  position: absolute;
-  left: 27.5rem;
-  top: 1rem;
-  color: #ffffff;
-}
-.ft_text2 {
-  width: 45%;
-  font-size: 0.9rem;
-  position: absolute;
-  left: 27.5rem;
-  top: 5rem;
-  color: #ffffff;
-}
-.ft_text3 {
-  float: left;
-  font-size: 1rem;
-  color: #ffffff;
-  position: absolute;
-  top: 10rem;
-  left: 27.7rem;
-}
 .ft_text4 {
   float: left;
+  margin-left: 0.96rem;
   font-size: 1rem;
   color: #ffffff;
-  position: absolute;
-  top: 17.5rem;
-  left: 46rem;
   cursor: pointer;
 }
 .ft_text5 {
   float: left;
+  margin-left: 0.96rem;
   font-size: 1rem;
   color: #ffffff;
-  position: absolute;
-  top: 17.5rem;
-  left: 51rem;
   cursor: pointer;
 }
 .ft_stick {
+  float: left;
+  margin-top: 0.4rem;
+  margin-left: 0.96rem;
   width: 0.1rem;
   height: 1rem;
-  background-color: #ffffff;
-  position: absolute;
-  top: 18rem;
-  left: 50.45rem;
+  background-color: #bcbcbc;
 }
-.ft_textbox {
-  clear: both;
-  padding-top: 2rem;
-  line-height: 2;
+.ft_text6 {
+  float: left;
+  margin-left: 0.96rem;
+  font-size: 1rem;
+  color: #ffffff;
+  cursor: pointer;
 }
+.ft_stick2 {
+  float: left;
+  margin-top: 0.4rem;
+  margin-left: 0.96rem;
+  width: 0.1rem;
+  height: 1rem;
+  background-color: #bcbcbc;
+}
+.ft_text7 {
+  float: left;
+  margin-left: 0.96rem;
+  font-size: 1rem;
+  color: #ffffff;
+  cursor: pointer;
+}
+.ft_stick3 {
+  float: left;
+  margin-top: 0.4rem;
+  margin-left: 0.96rem;
+  width: 0.1rem;
+  height: 1rem;
+  background-color: #bcbcbc;
+}
+.ft_text8_2 {
+  float: left;
+  margin-left: 0.96rem;
+  font-size: 1rem;
+  color: #ffffff;
+  cursor: pointer;
+}
+.ft_stick4 {
+  float: left;
+  margin-top: 0.4rem;
+  margin-left: 0.96rem;
+  width: 0.1rem;
+  height: 1rem;
+  background-color: #bcbcbc;
+}
+.ft_text9 {
+  float: left;
+  margin-left: 0.96rem;
+  font-size: 1rem;
+  color: #ffffff;
+  cursor: pointer;
+}
+.ft_stick5 {
+  float: left;
+  margin-top: 0.4rem;
+  margin-left: 0.96rem;
+  width: 0.1rem;
+  height: 1rem;
+  background-color: #bcbcbc;
+}
+.ft_text10 {
+  float: left;
+  margin-left: 0.96rem;
+  font-size: 1rem;
+  color: #ffffff;
+  cursor: pointer;
+}
+.ft_stick6 {
+  float: left;
+  margin-top: 0.4rem;
+  margin-left: 0.96rem;
+  width: 0.1rem;
+  height: 1rem;
+  background-color: #bcbcbc;
+}
+/* 2 */
+.ft_textbox_2 {
+  float: left;
+  margin-left: 22.5rem;
+  margin-top: 3rem;
+  width: 37.1rem;
+  height: 1.81rem;
+}
+.ft_textbox_2 p {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 0.93rem;
+}
+.ft_text4_2 {
+  float: left;
+  margin-left: 0.96rem;
+  color: #ffffff;
+  cursor: pointer;
+}
+.ft_text5_2 {
+  float: left;
+  margin-left: 0.96rem;
+  color: #ffffff;
+  cursor: pointer;
+}
+.ft_stick_2 {
+  float: left;
+  margin-top: 0.24rem;
+  margin-left: 0.96rem;
+  width: 0.1rem;
+  height: 1rem;
+  background-color: #bcbcbc;
+}
+.ft_text6_2 {
+  float: left;
+  margin-left: 0.96rem;
+  color: #ffffff;
+  cursor: pointer;
+}
+.ft_stick2_2 {
+  float: left;
+  margin-top: 0.24rem;
+  margin-left: 0.96rem;
+  width: 0.1rem;
+  height: 1rem;
+  background-color: #bcbcbc;
+}
+.ft_text7_2 {
+  float: left;
+  margin-left: 0.96rem;
+  color: #ffffff;
+  cursor: pointer;
+}
+.ft_stick3_2 {
+  float: left;
+  margin-top: 0.24rem;
+  margin-left: 0.96rem;
+  width: 0.1rem;
+  height: 1rem;
+  background-color: #bcbcbc;
+}
+.ft_text8_2_2 {
+  float: left;
+  margin-left: 0.96rem;
+  color: #ffffff;
+  cursor: pointer;
+}
+.ft_stick4_2 {
+  float: left;
+  margin-top: 0.24rem;
+  margin-left: 0.96rem;
+  width: 0.1rem;
+  height: 1rem;
+  background-color: #bcbcbc;
+}
+.ft_text9_2 {
+  float: left;
+  margin-left: 7rem;
+  color: #ffffff;
+  cursor: pointer;
+}
+.ft_stick5_2 {
+  float: left;
+  margin-top: 0.24rem;
+  margin-left: 0.96rem;
+  width: 0.1rem;
+  height: 1rem;
+  background-color: #bcbcbc;
+}
+.ft_text10_2 {
+  float: left;
+  margin-left: 0.96rem;
+  color: #ffffff;
+  cursor: pointer;
+}
+.ft_stick6_2 {
+  float: left;
+  margin-top: 0.24rem;
+  margin-left: 0.96rem;
+  width: 0.1rem;
+  height: 1rem;
+  background-color: #bcbcbc;
+}
+.ft_text11_2 {
+  float: left;
+  margin-left: 0.96rem;
+  color: #ffffff;
+  cursor: pointer;
+}
+.ft_stick7_2 {
+  float: left;
+  margin-top: 0.24rem;
+  margin-left: 0.96rem;
+  width: 0.1rem;
+  height: 1rem;
+  background-color: #bcbcbc;
+}
+/* 2 */
 /*********************footer 끝****************************/

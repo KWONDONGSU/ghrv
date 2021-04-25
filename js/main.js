@@ -124,68 +124,8 @@ $(function () {
   UI.initialize();
   //따라다니는 팝업끝
 */
-  $("#header .nav_btn").click(function () {
+  $(".nav_btn").click(function () {
     $("#nav").slideToggle();
-  });
-  if ($(window).width() > 760) {
-    $("#nav").show();
-  } else {
     $("#nav").hide();
-  }
-  $(window).resize(function () {
-    if ($(window).width() > 760) {
-      $("#nav").show();
-    } else {
-      $("#nav").hide();
-    }
-  });
-
-  if ($(window).width() > 980) {
-    $("#nav").show();
-  } else {
-    $("#nav").hide();
-  }
-  $(window).resize(function () {
-    if ($(window).width() > 980) {
-      $("#nav").show();
-    } else {
-      $("#nav").hide();
-    }
-  });
-  $(".regular").slick({
-    dots: true,
-    infinite: true,
-    slidesToShow: 3,
-    slidesToScroll: 3,
-    responsive: [
-      {
-        breakpoint: 980,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-          dots: false,
-        },
-      },
-      {
-        breakpoint: 540,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          dots: false,
-        },
-      },
-    ], //반응형 포인트 지정
-  });
-
-  //패럴렉스
-  var wd = $(window);
-  $(".video_x").each(function () {
-    var bg = $(this);
-    wd.scroll(function () {
-      var yPos = -(wd.scrollTop() / 2);
-      //나눠지는 숫자가 작을 수록 속도가 빠름
-      var coords = "50%" + yPos + "px";
-      bg.css({ backgroundPosition: coords });
-    });
   });
 });
